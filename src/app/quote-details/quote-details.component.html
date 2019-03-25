@@ -14,7 +14,7 @@
       <strong>Dislikes</strong> <em>{{quote.downVotes}}</em>
     </p>
   </div>
-  <button type="button" class="btn" (click)=quoteUpVote(quote)>Up Vote</button>
-  <button type="button" class="btn" (click)=quoteDownVote(quote)>Down Vote</button>
-  <button class="btn" (click)='quoteDelete(true)'>Delete Quote</button>
+  <button type="button" class="btn btn-success" (click)='upvote()'>Up Vote{{quote.upvotes}}</button>
+  <button type="button" class="btn btn-danger" (click)='downVote()'>Down Vote{{quote.downvotes}}</button>
+  <button class="btn btn-primary" (click)='quoteDelete(true)'>Delete Quote</button>
 </div>
